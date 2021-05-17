@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="assets/style.css" media="screen"/>
+
+        <title>REVISTA</title>
+    </head>
+
+    <body>
+
+        <header>
+
+            <a id="home" href="#"><h1>REVISTA</h1></a>
+
+        </header>
+
+        <div class="divider1">NOTÍCIAS</div>
+
+        <section>
+
+        <figure>
+            <img src="images/porschepro.jpg" alt="Porsche"  style="width: 80%"/>
+            <figcaption>Porsche comemora 20 anos na China com versão especial do 911</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/mclarenpro.jpg" alt="McLaren" style="width: 80%" />
+            <figcaption>McLaren adota pintura especial para o GP de Mônaco de F1</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/audia5pro.jpg" alt="AudiA5" style="width: 80%" />
+            <figcaption>Novo Audi A5 Sportback já está em pré-venda no Brasil por R$ 284.990</figcaption>
+        </figure>
+        
+        </section>
+
+        <section>
+
+            <figure>
+                <img src="images/astonmartin.jpg" alt="AstonMartino"  style="width: 80%"/>
+                <figcaption>Aston Martin terá “oportunidade perdida” se trocar foco para carro de 2022</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/fiat.jpg" alt="Fiat" style="width: 80%" />
+                <figcaption>Fiat Strada e Toro lideram vendas em 22 estados em abril</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/stockcar.jpg" alt="StockCar" style="width: 80%" />
+                <figcaption>Stock Car: Massa escala pelotão e chega ao primeiro top-10 na categoria</figcaption>
+            </figure>
+            
+            </section>
+
+        <div class="divider2"></div>
+
+        <footer> © 2021 Thiago e Vinicius.  Todos direitos reservados.</footer>
+
+    </body>
+
+</html>

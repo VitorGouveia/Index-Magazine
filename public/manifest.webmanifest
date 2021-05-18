@@ -1,7 +1,7 @@
 {
   "short_name": "Revista Digital",
   "name": "Revista Digital da ETEC",
-  "icons": [],
+  "description": "Revista Digital Simples feita para um dos projetos da ETEC.",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#888888",

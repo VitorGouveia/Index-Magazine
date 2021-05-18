@@ -1,5 +1,7 @@
 import React, { FC } from "react"
 
+import "./styles.scss"
+
 type CardProps = {
   url: string
   description: string

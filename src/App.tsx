@@ -1,6 +1,8 @@
 import React, { FC, lazy, Suspense } from "react"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 
+import "./global.scss"
+
 const Home = lazy(() => import("./pages/Home"))
 
 const App: FC = () => {

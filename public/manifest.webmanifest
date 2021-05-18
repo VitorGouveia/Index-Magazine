@@ -1,0 +1,9 @@
+{
+  "short_name": "Revista Digital",
+  "name": "Revista Digital da ETEC",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#888888",
+  "background_color": "#dcdcdc"
+}

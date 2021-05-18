@@ -14,6 +14,16 @@ body{
 	box-shadow: 0px 3px 8px #000;
 }
 
+/* Hover da Imagem */
+img {
+    transition: all .2s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /* Cabeçalho */
 header{
     width: 100%;
@@ -90,6 +100,10 @@ figcaption{
     margin: 0.85rem auto;
 }
 
+main a{
+    font-family: 'Roboto Slab', serif;
+}
+
 /* Segundo Divisor */
 .divider2 {
     display: flex;
@@ -107,6 +121,7 @@ footer{
     margin-top: .80rem;
 }
 
+/* Outras Categorias */
 #masterCategory{
     width: 90%;
     margin: 0 auto;
@@ -121,22 +136,55 @@ footer{
    
 }
 
+#masterCategory div {
+    width: 45%;
+}
+
 #masterCategory div h1 {
+    font-size: 1.75rem;
     border-bottom: 2px solid #1d1d1d;
 }
 
-#masterCategory div figure {
+#masterCategory div section {
+    margin: 0.75rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#masterCategory div section figure {
     text-align: center;
-    font-size: 1.50rem;
-    padding-bottom: 1.4rem;
+    max-width: 40%;
+    font-size: 1.10rem;
+    padding: 1.2rem 0;
 }
 
-#masterCategory div img{
+#masterCategory div section img{
     box-shadow: 0px 3px 8px #000;
-    
 }
 
-#masterCategory div figcaption{
+#masterCategory div section figcaption{
     font-family: 'Roboto Slab', serif;
     margin: 0.85rem auto;
+}
+
+#masterCategory div section img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1390px) {
+    #masterCategory div section {
+        flex-direction: column;
+    }
+
+    #masterCategory div section figure {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    #masterCategory div section figcaption{
+        width: 100%;
+        max-width: 100%;
+    }
 }

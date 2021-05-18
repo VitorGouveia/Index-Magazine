@@ -21,7 +21,7 @@
       "name": "Página Principal",
       "short_name": "Homepage",
       "description": "Veja todas as nossas revistas digitais.",
-      "url": "/",
+      "url": ".",
       "icons": [{ "src": "./static/192x-book.png", "sizes": "192x192" }]
     }
   ],

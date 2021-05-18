@@ -3,6 +3,7 @@
   "name": "Revista Digital da ETEC",
   "description": "Revista Digital Simples feita para um dos projetos da ETEC.",
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "theme_color": "#888888",
   "background_color": "#dcdcdc",

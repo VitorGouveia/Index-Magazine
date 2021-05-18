@@ -130,7 +130,7 @@ footer{
     justify-content: space-between;
     grid-column: 1/3 span;
 
-    border-top: 2px solid rgba(29, 29, 29, 0.7);
+    border-top: 2px solid rgb(0, 0, 0);
 
     padding-top: 2rem;
    
@@ -142,12 +142,11 @@ footer{
 
 #masterCategory div h1 {
     font-size: 1.75rem;
-    border-bottom: 2px solid #1d1d1d;
+    border-bottom: 2px solid #000000;
 }
 
 #masterCategory div section {
     margin: 0.75rem auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;

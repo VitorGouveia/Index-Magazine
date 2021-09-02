@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href="assets/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/global.css" media="screen"/>
     
     <title>REVISTA</title>
 </head>
@@ -21,93 +22,91 @@
 <body>
     
     <header>
-        
-        <a id="home" href="#"><h1>REVISTA</h1></a>
+        <a id="header-text" href="#"><h1>REVISTA</h1></a>
         
     </header>
     
-    <div class="divider1">NOTÍCIAS</div>
+    <h2 class="header-divider">NOTÍCIAS</h2>
     
     <main>
-        <section>
+        <section id="news-content">
             
             <figure>
-                <img src="images/porschepro.jpg" alt="Porsche"  style="width: 80%"/>
-                <figcaption style="width: 80%">Porsche comemora 20 anos na China com versão especial do 911</figcaption>
+                <img src="images/porschepro.jpg" alt="Porsche" />
+                <figcaption class="fig-text">Porsche comemora 20 anos na China com versão especial do 911</figcaption>
             </figure>
             
             <figure>
-                <img src="images/mclarenpro.jpg" alt="McLaren" style="width: 80%" />
-                <figcaption style="width: 80%">McLaren adota pintura especial para o GP de Mônaco de F1</figcaption>
+                <img src="images/mclarenpro.jpg" alt="McLaren" />
+                <figcaption class="fig-text">McLaren adota pintura especial para o GP de Mônaco de F1</figcaption>
             </figure>
             
             <figure>
-                <img src="images/audia5pro.jpg" alt="AudiA5" style="width: 80%" />
-                <figcaption style="width: 80%">Novo Audi A5 Sportback já está em pré-venda no Brasil por R$ 284.990</figcaption>
+                <img src="images/audia5pro.jpg" alt="AudiA5" />
+                <figcaption class="fig-text">Novo Audi A5 Sportback já está em pré-venda no Brasil por R$ 284.990</figcaption>
             </figure>
             
             <figure>
-                <img src="images/astonmartin.jpg" alt="AstonMartino"  style="width: 80%"/>
-                <figcaption style="width: 80%">Aston Martin terá “oportunidade perdida” se trocar foco para carro de 2022</figcaption>
+                <img src="images/astonmartin.jpg" alt="AstonMartino" />
+                <figcaption class="fig-text">Aston Martin terá “oportunidade perdida” se trocar foco para carro de 2022</figcaption>
             </figure>
             
             <figure>
-                <img src="images/fiat.jpg" alt="Fiat" style="width: 80%" />
-                <figcaption style="width: 80%">Fiat Strada e Toro lideram vendas em 22 estados em abril</figcaption>
+                <img src="images/fiat.jpg" alt="Fiat" />
+                <figcaption class="fig-text">Fiat Strada e Toro lideram vendas em 22 estados em abril</figcaption>
             </figure>
             
             <figure>
-                <img src="images/stockcar.jpg" alt="StockCar" style="width: 80%" />
-                <figcaption style="width: 80%">Stock Car: Massa escala pelotão e chega ao primeiro top-10 na categoria</figcaption>
+                <img src="images/stockcar.jpg" alt="StockCar" />
+                <figcaption class="fig-text">Stock Car: Massa escala pelotão e chega ao primeiro top-10 na categoria</figcaption>
             </figure>
             
+        </section>
             
-            
-            <div id="masterCategory">
-                
-                <div class="otherCategory">
-                    <h1>Esportes</h1>
+        <section id="news-double-content">
+
+                <section class="double-content-section"> 
+                    <h1 class="side-header">Esportes</h1>
+
+                    <figure>
+                        <img src="images/corinthians.jpg" alt="StockCar"/>
+                        <figcaption class="fig-text">Em busca de zagueiro, Inter faz sondagens a Jemerson e Gil, do Corinthians</figcaption>
+                    </figure>
                     
-                    <section>
-                        <figure>
-                            <img src="images/corinthians.jpg" alt="StockCar" style="width: 100%" />
-                            <figcaption style="width: 95%">Em busca de zagueiro, Inter faz sondagens a Jemerson e Gil, do Corinthians</figcaption>
-                        </figure>
-                        
-                        <figure>
-                            <img src="images/lebron.jpg" alt="StockCar" style="width: 100%" />
-                            <figcaption style="width: 95%">LeBron James aponta Stephen Curry como MVP da temporada da NBA</figcaption>
-                        
-                        </figure>
-                    </section>
-                </div>
-                
-                <div class="otherCategory">
-                    <h1>Mercado Imobiliário</h1>
+                    <figure>
+                        <img src="images/lebron.jpg" alt="StockCar"/>
+                        <figcaption class="fig-text">LeBron James aponta Stephen Curry como MVP da temporada da NBA</figcaption>
                     
-                    <section>
-                        <figure>
-                            <img src="images/loft1.jpg" alt="StockCar" style="width: 100%" />
-                            <figcaption style="width: 95%">Com R$ 2,9 bi em caixa, Loft vai contratar pessoal e comprar apartamentos</figcaption>
-                        </figure>
-                        
-                        <figure>
-                            <img src="images/saopaulo.jpg" alt="StockCar" style="width: 100%" />
-                            <figcaption style="width: 95%">Mercado imobiliário de São Paulo tem aumento de vendas mesmo com pandemia</figcaption>
-                        </figure>
-                    </div>
+                    </figure>
+
                 </section>
-            </div>
-            
-        </div>
         
-    </section>
+                <section class="double-content-section">
+                    <h1 class="side-header">Mercado Imobiliário</h1>
+
+                    <figure>
+                        <img src="images/loft1.jpg" alt="StockCar"/>
+                        <figcaption class="fig-text">Com R$ 2,9 bi em caixa, Loft vai contratar pessoal e comprar apartamentos</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/saopaulo.jpg" alt="StockCar"/>
+                        <figcaption class="fig-text">Mercado imobiliário de São Paulo tem aumento de vendas mesmo com pandemia</figcaption>
+                    </figure>
+                
+            </section>
+
+
+
+        </section>
+            
     
     
-    <a href="#">Volte ao Topo</a>
 </main>
 
-<div class="divider2"></div>
+
+<a href="#">Volte ao Topo</a>
+<hr>
 
 <footer> © 2021 Thiago e Vinicius.  Todos direitos reservados.</footer>
 

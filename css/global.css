@@ -21,9 +21,10 @@
   --dark-900: hsl(0, 0%, 0%);
   --accent: hsl(5, 65%, 40%);
   
-  --gradient: linear-gradient(-90deg, var(--clr-banner-primary), var(--clr-banner-secondary));
-  --clr-banner-primary: hsl(5, 70%, 55%);
-  --clr-banner-secondary: hsl(340, 55%, 55%);
+  --gradient: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+  --clr-primary: hsl(258, 70%, 55%);
+  --clr-secondary: hsl(278, 55%, 55%);
+  --clr-tertiary: hsl(192, 55%, 55%);
   
   /* Font Families */
   --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
@@ -93,7 +94,8 @@ footer{
 }
 
 button, 
-input {
+input,
+hr {
   outline: 0;
   border: 0;
 }

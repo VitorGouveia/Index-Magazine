@@ -55,9 +55,15 @@
     background: var(--clr-quartenary);
 }
 
+.content-link:hover .section-img{
+    transform: scale(.95);
+    cursor: pointer;
+}
+
 .content-wrapper{
     margin: 1em;
 }
+
 
 .section-img{
     width: 100%;
@@ -72,14 +78,14 @@
     transition: all .2s ease;
 }
 
-.section-img:hover{
+/* .section-img:hover{
     transform: scale(.95);
     cursor: pointer;
-}
+} */
 
 .section-paragraph{
     max-width: 60ch;
-
+    
     font-size: clamp(0.8em, 2vw, 1.15em);
     font-weight: 400;
     font-family: var(--ff-roboto);
@@ -130,21 +136,21 @@
 
 .footer{
     width: 100%;
-
+    
     font-size: clamp(0.8em, 2vw, 0.9em);
     font-family: var(--ff-roboto);
     font-weight: 400;
     font-style: italic;
     
     background: var(--clr-tertiary);
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     
     margin-top: 1.5em;
-
+    
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }

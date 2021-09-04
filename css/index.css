@@ -13,12 +13,12 @@
     align-items: center;
     justify-content: center;
     
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .header-title{
-    font-size: clamp(2.5rem, 8vw, 7rem);
+    font-size: clamp(2.5rem, 8vw, 6rem);
     font-family: var(--ff-roboto-slab);
     text-align: center;
     text-shadow: 0px 2px 0px var(--light-100);
@@ -40,6 +40,19 @@
 .section-content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.content-link{
+    color: black;
+}
+
+.content-link:link,
+.content-link:visited{
+    color: black;
+}
+
+.content-link:hover{
+    color: var(--clr-quartenary);
 }
 
 .content-wrapper{
@@ -131,8 +144,8 @@
     
     margin-top: 1.5em;
 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 

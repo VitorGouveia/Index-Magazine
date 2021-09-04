@@ -25,6 +25,7 @@
   --clr-primary: hsl(258, 70%, 55%);
   --clr-secondary: hsl(278, 55%, 55%);
   --clr-tertiary: hsl(50, 100%, 50%);
+  --clr-quartenary: hsl(15, 100%, 50%);
   
   /* Font Families */
   --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
@@ -64,7 +65,7 @@ body{
   min-height: 100vh;
 
   display: grid;
-  grid-template-rows: auto auto auto 2em auto;
+  grid-template-rows: 15vh auto auto 2em 10vh;
   grid-template-columns: 1fr 4fr 4fr 1fr;
   grid-template-areas: 
   "header header header header"

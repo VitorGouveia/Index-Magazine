@@ -6,7 +6,7 @@
     .section-content{
         grid-template-columns: repeat(2, 1fr);
 
-        /* margin: 2em 0em; */
+        margin: 2em 0em;
     }
 
     .content-wrapper{

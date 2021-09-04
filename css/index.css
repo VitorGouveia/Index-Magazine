@@ -52,7 +52,7 @@
 }
 
 .content-link:hover{
-    color: var(--clr-quartenary);
+    background: var(--clr-quartenary);
 }
 
 .content-wrapper{
@@ -73,7 +73,7 @@
 }
 
 .section-img:hover{
-    transform: scale(.9);
+    transform: scale(.95);
     cursor: pointer;
 }
 
@@ -131,9 +131,10 @@
 .footer{
     width: 100%;
 
-    font-size: clamp(0.8em, 2vw, 1em);
+    font-size: clamp(0.8em, 2vw, 0.9em);
     font-family: var(--ff-roboto);
-    font-weight: 300;
+    font-weight: 400;
+    font-style: italic;
     
     background: var(--clr-tertiary);
 

@@ -23,17 +23,17 @@
     text-align: center;
     text-shadow: 0px 2px 0px var(--light-100);
     text-transform: uppercase;
-
+    
     padding: 0.5em;
 }
 
 .hr-main{
     height: 1px;
-
+    
     opacity: .25;
-
+    
     margin-top: 2em;
-
+    
     background: var(--dark-900);
 }
 
@@ -49,12 +49,19 @@
 .section-img{
     width: 100%;
     height: auto;
-
+    
     border-radius: 0.40em;
-
+    
     display: flex;
-
+    
     margin: 0 auto;
+    
+    transition: all .2s ease;
+}
+
+.section-img:hover{
+    transform: scale(.9);
+    cursor: pointer;
 }
 
 .section-paragraph{
@@ -67,9 +74,9 @@
 
 .hr-content{
     height: 1px;
-
+    
     opacity: .25;
-
+    
     background: var(--dark-900);
 }
 
@@ -86,16 +93,16 @@
 .back-to-top{
     width: 100%;
     height: 100%¨;
-
+    
     font-size: clamp(0.7em, 1vw, 0.8em);
     font-weight: 300;
     font-family: var(--ff-roboto);
     text-transform: uppercase;
-
+    
     box-shadow: 0px 6px 0px var(--clr-secondary);
     
     background: var(--clr-primary);
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,18 +115,18 @@
 .hr-bottom{
     width: 100%;
     height: 2px; 
-
+    
     background: linear-gradient(to right, var(--clr-primary), var(--clr-secondary), var(--clr-tertiary));
 }
 
 .footer{
     width: 100%;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    
     margin: 0em 0em;
 }
 

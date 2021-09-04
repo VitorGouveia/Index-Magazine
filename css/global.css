@@ -62,12 +62,14 @@ html{
 }
 
 body{
+  min-height: 100vh;
+
   display: grid;
-  grid-template-rows: 30vh auto auto 10em;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
   grid-template-areas: 
   "header header header header"
-  "section-content section-content section-content section-content"
+  ". main main ."
   ". section-transversal section-transversal ."
   "back-to-top . . ."
   "footer footer footer footer";
@@ -77,8 +79,8 @@ header{
   grid-area: header;
 }
 
-.section-content{
-  grid-area: section-content;
+main{
+  grid-area: main;  
 }
 
 .section-transversal{
@@ -95,7 +97,7 @@ footer{
 
 button, 
 input,
-hr {
+hr{
   outline: 0;
   border: 0;
 }

@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 /* Source Sans Pro | Light 300, Light Italic 300, Regular 400, Regular Italic 400 */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-/* Roboto | Light 300 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* Roboto | Light 300, Regular 400 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 /* Roboto Slab | Light 300, Regular 400 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
 
@@ -24,7 +24,7 @@
   --gradient: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
   --clr-primary: hsl(258, 70%, 55%);
   --clr-secondary: hsl(278, 55%, 55%);
-  --clr-tertiary: hsl(192, 55%, 55%);
+  --clr-tertiary: hsl(50, 100%, 50%);
   
   /* Font Families */
   --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
@@ -65,13 +65,13 @@ body{
   min-height: 100vh;
 
   display: grid;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto 2rem auto;
   grid-template-columns: 1fr 4fr 4fr 1fr;
   grid-template-areas: 
   "header header header header"
   ". main main ."
   ". section-transversal section-transversal ."
-  "back-to-top . . ."
+  ". back-top-wrapper . ."
   "footer footer footer footer";
 }
 
@@ -87,8 +87,8 @@ main{
   grid-area: section-transversal
 }
 
-.back-to-top{
-  grid-area: back-to-top;
+.back-top-wrapper{
+  grid-area: back-top-wrapper;
 }
 
 footer{
@@ -102,15 +102,17 @@ hr{
   border: 0;
 }
 
-a {
+a{
   transition: 200ms all;
   text-decoration: none;
 }
 
-a:visited, a:link {
+a:visited, 
+a:link{
   color: var(--dark-900);
 }
 
-a:hover {
-  color: var(--accent);
+a:hover, 
+a:focus-within{
+  color: var(--clr-tertiary);
 }

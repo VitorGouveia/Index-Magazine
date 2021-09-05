@@ -90,7 +90,7 @@
     font-family: var(--ff-roboto);
     text-transform: uppercase;
     
-    margin: 0.5em 0.30em;
+    margin: 0.3em 1em;
 }
 
 .ctg-border{
@@ -105,7 +105,7 @@
     font-weight: 400;
     font-family: var(--ff-roboto);
     
-    margin: 0.5em 0.30em;
+    margin: 0.3em 0.75em;
 }
 
 .hr-content{

@@ -65,7 +65,7 @@ body{
   min-height: 100vh;
 
   display: grid;
-  /* grid-template-rows: 20vh auto auto 2em 10vh; */
+  /* grid-template-rows: 20vh auto auto 2em auto; */
   grid-template-columns: 1fr 4fr 4fr 1fr;
   grid-template-areas: 
   "header header header header"

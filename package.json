@@ -1,9 +1,13 @@
 {
   "dependencies": {
-    "commitizen": "^4.2.4"
+    "autoprefixer": "^10.3.4",
+    "commitizen": "^4.2.4",
+    "postcss": "^8.3.6",
+    "postcss-nested": "^5.0.6"
   },
   "scripts": {
-    "commit": "cz"
+    "commit": "cz",
+    "build": "postcss in.css -o out.css"
   },
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0"

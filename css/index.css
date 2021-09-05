@@ -80,6 +80,20 @@
     transition: all .2s ease;
 }
 
+.section-title{
+    font-size: clamp(0.7em, 2vw, 0.9em);
+    font-weight: 400;
+    font-family: var(--ff-roboto);
+    text-transform: uppercase;
+
+    margin: 0.5em 0.30em;
+}
+
+.ctg-border{
+    width: 5%;
+    border-bottom: 2px solid var(--accent);
+}
+
 .section-paragraph{
     max-width: 60ch;
     
@@ -87,7 +101,7 @@
     font-weight: 400;
     font-family: var(--ff-roboto);
     
-    margin: 0.5em 0em;
+    margin: 0.5em 0.30em;
 }
 
 .hr-content{
@@ -98,9 +112,10 @@
     background: var(--dark-900);
 }
 
-/* .section-transversal{
-    
-} */
+.section-parallel{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+}
 
 .back-top-wrapper{
     display: grid;

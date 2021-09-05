@@ -70,7 +70,7 @@ body{
   grid-template-areas: 
   "header header header header"
   ". main main ."
-  ". section-parallel section-parallel ."
+  ". section-parallel aside-section ."
   ". back-top-wrapper . ."
   "footer footer footer footer";
 }
@@ -85,6 +85,10 @@ main{
 
 .section-parallel{
   grid-area: section-parallel;
+}
+
+aside{
+  grid-area: aside-section;
 }
 
 .back-top-wrapper{

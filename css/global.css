@@ -83,6 +83,10 @@ main{
   grid-area: main;  
 }
 
+.ctg-wrapper{
+  grid-area: ctg-wrapper;
+}
+
 .section-parallel{
   grid-area: section-parallel;
 }

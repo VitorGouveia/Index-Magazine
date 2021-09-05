@@ -1,15 +1,3 @@
-/* @media (max-width: 425px) {
-    .aside-section{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-       
-    }
-
-    .aside-section .ctg-title{
-        grid-column: 1;
-    }
-} */
-
 @media (max-width: 768px) {
     /* .header{
 

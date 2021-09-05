@@ -1,7 +1,4 @@
 .header{
-    width: 100%;
-    height: 100%;
-    
     background: linear-gradient(-45deg, hsl(5, 70%, 55%), hsl(340, 55%, 55%), hsl(276, 55%, 55%));
     background-attachment: fixed;
     background-size: 400% 400%;
@@ -121,7 +118,6 @@
 } */
 
 .section-parallel{
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(min-content, max-content);
@@ -181,8 +177,6 @@
 }
 
 .footer{
-    width: 100%;
-    
     font-size: clamp(0.8em, 2vw, 1em);
     font-family: var(--ff-roboto);
     font-weight: 400;
@@ -193,7 +187,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     
     margin-top: 1.5em;
     

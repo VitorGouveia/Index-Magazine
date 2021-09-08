@@ -83,7 +83,7 @@
 
 .section-title{
     font-size: clamp(0.7em, 2vw, 0.9em);
-    font-weight: 400;
+    font-weight: 600;
     font-family: var(--ff-roboto);
     text-transform: uppercase;
     

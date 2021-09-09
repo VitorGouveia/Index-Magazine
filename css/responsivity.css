@@ -20,3 +20,17 @@
         grid-column: 1;
     }
 }
+
+@media (max-width: 1024px){
+    .gallery-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-section a.content-link:nth-child(1){
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    
+        margin: 0.5em;
+    }
+}

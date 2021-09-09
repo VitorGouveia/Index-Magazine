@@ -162,6 +162,10 @@
     grid-auto-rows: minmax(min-content, max-content);
 }
 
+.gallery-section a:nth-child(1) div.content-wrapper{
+    margin: 0.5em;
+}
+
 .gallery-section a.content-link:nth-child(1){
     grid-column: 1 / 4;
     grid-row: 1 / 4;

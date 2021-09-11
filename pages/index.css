@@ -216,7 +216,7 @@ SECTION GALLERY
 
 .gallery-title{
     font-family: var(--ff-roboto);
-    font-size: clamp(0.8em, 2vw, 2em);
+    font-size: var(--fs-heading-secondary);
     text-align: center;
     text-transform: uppercase;
     
@@ -228,7 +228,7 @@ SECTION GALLERY
 }
 
 .gallery-hr{
-    width: 35%;
+    width: 30%;
     height: 4px;
     background: hsla(0, 0%, 0%, 0.1);
 }

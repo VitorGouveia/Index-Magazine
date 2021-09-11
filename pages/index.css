@@ -131,8 +131,8 @@ MAIN
     max-width: 60ch;
     
     font-size: var(--fs-paragraph);
-    font-weight: 350;
-    font-family: var(--ff-roboto);
+    font-weight: 400;
+    font-family: var(--ff-raleway);
     
     margin: 0.3em 0.5em;
 }
@@ -179,8 +179,8 @@ SECTION PARALLEL
 
 .category-title{
     font-size: var(--fs-heading-secondary);
-    font-family: var(--ff-roboto-slab);
-    font-weight: 600;
+    font-family: var(--ff-montserrat);
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase;
 }
@@ -313,9 +313,10 @@ FOOTER
 ###### */
 .footer{
     font-size: clamp(0.8em, 2vw, 1em);
-    font-family: var(--ff-roboto);
-    font-weight: 350;
+    font-family: var(--ff-montserrat);
+    font-weight: 400;
     font-style: italic;
+    text-transform: uppercase;
     
     background: linear-gradient(-45deg, hsl(55, 100%, 50%), hsl(40, 100%, 50%), hsl(25, 100%, 50%));;
     background-attachment: fixed;

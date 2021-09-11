@@ -16,14 +16,15 @@
   
   /* FONTS */
   /* Families */
-  --ff-abril-fatface: 'Abril Fatface', cursive;
+  --ff-montserrat: 'Montserrat', sans-serif;
+  --ff-raleway: 'Raleway', sans-serif;
   --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
   --ff-roboto: 'Roboto', sans-serif;
   --ff-roboto-slab: 'Roboto Slab', serif;
   
   /* Sizing */
   --fs-content-category: clamp(0.65rem, 0.6000rem + 0.2500vw, 0.9rem);
-  --fs-paragraph: clamp(0.7rem, 0.5900rem + 0.5500vw, 1.25rem);
+  --fs-paragraph: clamp(0.95rem, 0.8808rem + 0.3077vw, 1.25rem);
   --fs-heading-primary: clamp(2.5rem, 1.8000rem + 3.5000vw, 6rem);
   --fs-heading-secondary: clamp(0.7rem, 0.4400rem + 1.3000vw, 2rem);
 

@@ -1,3 +1,7 @@
+/* 
+######
+HEADER
+###### */
 .header{
     background: linear-gradient(-45deg, hsl(5, 70%, 55%), hsl(340, 55%, 55%), hsl(276, 55%, 55%));
     background-attachment: fixed;
@@ -15,7 +19,7 @@
 }
 
 .header-title{
-    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-size: var(--fs-heading-primary);
     font-family: var(--ff-roboto-slab);
     text-align: center;
     text-shadow: 0px 2px 0px var(--light-100);
@@ -23,7 +27,15 @@
     
     padding: 0.5em;
 }
+/* 
+######
+######
+###### */
 
+/*
+######
+MAIN
+######  */
 .hr-main{
     height: 1px;
     
@@ -81,7 +93,7 @@
     transition: all .2s ease;
 }
 
-.section-title{
+.content-category{
     font-size: clamp(0.7em, 2vw, 0.9em);
     font-weight: 600;
     font-family: var(--ff-roboto);
@@ -98,12 +110,16 @@
 .section-paragraph{
     max-width: 60ch;
     
-    font-size: clamp(0.8em, 2vw, 1.3em);
+    font-size: var(--fs-paragraph);
     font-weight: 400;
     font-family: var(--ff-roboto);
     
     margin: 0.3em 0.75em;
 }
+/* 
+######
+######
+###### */
 
 .hr-content{
     height: 3px;
@@ -146,12 +162,12 @@
 /* ### */
 .gallery-title-wrapper{
     /* margin: 0 auto; */
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
+    
     margin-top: 1.5em;
 }
 
@@ -160,12 +176,12 @@
     font-size: clamp(0.8em, 2vw, 2em);
     text-align: center;
     text-transform: uppercase;
-
+    
     position: relative;
-
+    
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.200);
-
-  
+    
+    
 }
 
 .gallery-hr{
@@ -189,7 +205,7 @@
     grid-column: 1 / 4;
     grid-row: 1 / 4;
     grid-auto-rows: minmax(min-content, max-content);
-
+    
     /* margin: 0.5em; */
 }
 

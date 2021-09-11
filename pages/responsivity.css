@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
 
-    .section-content{
+    .main-section{
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
 
         margin: 2em 0em;
@@ -10,15 +11,17 @@
         margin: 0.75em;
     }
 
+    .aside-section .aside-title-wrapper{
+        grid-column: 1;
+    }
+
     .aside-section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
        
     }
 
-    .aside-section .ctg-title{
-        grid-column: 1;
-    }
+    
 }
 
 @media (max-width: 1024px){

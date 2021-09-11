@@ -1,0 +1,121 @@
+@import "/css/animations/animations.css";
+@import "/css/fonts/fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* ANIMATIONS */
+  /* Transitions */
+  --transition-fast: all 250ms ease;
+  --transition-normal: all 400ms ease;
+  --transition-slow: all 600ms ease;
+  
+  /* FONTS */
+  /* Families */
+  --ff-abril-fatface: 'Abril Fatface', cursive;
+  --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
+  --ff-roboto: 'Roboto', sans-serif;
+  --ff-roboto-slab: 'Roboto Slab', serif;
+  
+  /* Sizing */
+  --fs-paragraph: clamp(0.7rem, 0.5700rem + 0.6500vw, 1.35rem);
+  --fs-heading-primary: clamp(2.5rem, 1.8000rem + 3.5000vw, 6rem);
+
+  /* Colors */
+  --light-100: hsl(0, 0%, 100%);
+  --dark-900: hsl(0, 0%, 0%);
+  --accent: hsl(5, 65%, 40%);
+  
+  --clr-primary: hsl(258, 70%, 55%);
+  --clr-secondary: hsl(278, 55%, 55%);
+  --clr-tertiary: hsl(50, 100%, 50%);
+  --clr-quartenary: hsl(15, 100%, 50%);
+  
+  --gradient-primary: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+}
+
+/* Global Parameters */
+html{
+  font-size: 1rem;
+  
+  scroll-behavior: smooth;
+  scroll-padding: 5em;
+}
+
+body{
+  min-height: 100vh;
+  
+  display: grid;
+  grid-template-rows: 20vh auto auto auto auto 2em 15vh;
+  grid-template-columns: 0.8fr 4fr 4fr 0.8fr;
+  grid-template-areas: 
+  "header header header header"
+  ". main main ."
+  ". section-parallel aside-section ."
+  " . gallery-title gallery-title ."
+  ". gallery gallery ."
+  ". back-top-wrapper . ."
+  "footer footer footer footer";
+}
+
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;  
+}
+
+.ctg-wrapper{
+  grid-area: ctg-wrapper;
+}
+
+.section-parallel{
+  grid-area: section-parallel;
+}
+
+aside{
+  grid-area: aside-section;
+}
+
+.gallery-title-wrapper{
+  grid-area: gallery-title;
+}
+
+.gallery-section{
+  grid-area: gallery;
+}
+
+.back-top-wrapper{
+  grid-area: back-top-wrapper;
+}
+
+footer{
+  grid-area: footer;
+}
+
+button, 
+input,
+hr{
+  outline: 0;
+  border: 0;
+}
+
+a{
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+a:visited, 
+a:link{
+  color: var(--light-100);
+}
+
+a:hover, 
+a:focus-within{
+  color: var(--clr-tertiary);
+}

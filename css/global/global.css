@@ -10,7 +10,7 @@
 :root{
   /* ANIMATIONS */
   /* Transitions */
-  --transition-fast: all 250ms ease;
+  --transition-fast: all 300ms ease;
   --transition-normal: all 400ms ease;
   --transition-slow: all 600ms ease;
   
@@ -108,7 +108,7 @@ hr{
 }
 
 a{
-  transition: var(--transition-fast);
+  transition: var(--transition-normal);
   text-decoration: none;
 }
 

@@ -1,5 +1,4 @@
 @media (max-width: 768px) {
-    
     body{
         min-height: 100vh;
         
@@ -15,8 +14,8 @@
         ". gallery gallery ."
         ". back-top-wrapper . ."
         "footer footer footer footer";
-      }
-
+    }
+    
     .main-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -42,6 +41,10 @@
 }
 
 @media (max-width: 1024px){
+    /* 
+    ###### 
+    Gallery 
+    ###### */
     .gallery-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -53,30 +56,52 @@
         
         margin: 0.5em;
     }
-    
-    
+    /* 
+    ###### 
+    ######
+    ###### */
 }
 
 @media (max-width: 1440px){
+    /* 
+    ###### 
+    Parallel 
+    ###### */
     section.section-parallel a.content-link .content-category{
-        margin: 0.5em 0.7em;
+        margin: 0.3em 0.7em;
     }
     
     section.section-parallel a.content-link .section-paragraph{
         margin: 0.3em 0.5em;
     }
-
-    section .gallery-section a.content-link .content-category{
-        margin: 0.5em 0.7em;
+    /* 
+    ###### 
+    ######
+    ###### */
+    
+    /* 
+    ###### 
+    Gallery 
+    ###### */
+    section.gallery-section a.content-link:nth-child(1) .content-category{
+        margin: 0.3em 1em;
     }
     
-    section .gallery-section a.content-link .section-paragraph{
-        margin: 0.3em 0.5em;
+    section.gallery-section a.content-link:nth-child(1) .section-paragraph{
+        margin: 0.3em 0.7em;
     }
+    /* 
+    ###### 
+    ######
+    ###### */
 }
 
 
 @media (max-width: 1920px){
+    /* 
+    ###### 
+    Parallel 
+    ###### */
     .section-parallel a.content-link .content-category{
         margin: -0.3em 1.40em;
     }
@@ -84,7 +109,15 @@
     .section-parallel a.content-link .section-paragraph{
         margin: 0.5em 1em;
     }
-
+    /* 
+    ###### 
+    ######
+    ###### */
+    
+    /* 
+    ###### 
+    Gallery 
+    ###### */
     .gallery-section a.content-link:nth-child(1) .content-category{
         margin: -0.3em 1.40em;
     }
@@ -92,4 +125,8 @@
     .gallery-section a.content-link:nth-child(1) .section-paragraph{
         margin: 0.5em 1em;
     }
+    /* 
+    ###### 
+    ######
+    ###### */
 }

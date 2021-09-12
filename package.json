@@ -6,7 +6,7 @@
   },
   "scripts": {
     "commit": "cz",
-    "build": "postcss css/global.css -o css/out-global.css"
+    "build": "postcss css/*.css -o css/build.css"
   },
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0",

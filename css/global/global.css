@@ -21,6 +21,7 @@
   --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
   --ff-roboto: 'Roboto', sans-serif;
   --ff-roboto-slab: 'Roboto Slab', serif;
+  --ff-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
   
   /* Sizing */
   --fs-content-category: clamp(0.65rem, 0.6000rem + 0.2500vw, 0.9rem);
@@ -31,6 +32,7 @@
   /* Colors */
   --light-100: hsl(0, 0%, 100%);
   --dark-900: hsl(0, 0%, 0%);
+  --gray-500: hsl(0, 0%, 40%);
   --accent: hsl(5, 65%, 40%);
   
   --clr-primary: hsl(258, 70%, 55%);
@@ -39,6 +41,8 @@
   --clr-quartenary: hsl(15, 100%, 50%);
   
   --gradient-primary: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+
+  --gutter: .5rem;
 }
 
 /* Global Parameters */

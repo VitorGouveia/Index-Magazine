@@ -1,34 +1,96 @@
-*{
-
-}
 body{
     display: grid;
     grid-template-areas: 
-    ". banner banner banner ."
-    ". . details . ."
-    ". . content . ."
-    "footer footer footer footer footer";
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
-    grid-template-rows: 10vh auto auto;
+    ". banner . "
+    ". details ."
+    ". content .";
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-rows: auto auto auto auto auto auto;
 } 
-
 .header{
+    display: grid;
     grid-area: banner;
-   
-    flex-direction: column;
-}
-
-.banner{
-    display: flex;
-    justify-content: center;
-
-    margin-top: 2em;
 }
 
 .details{
+    display: grid;
     grid-area: details;
+}
+
+.main{
+    display: grid;
+    grid-area: content;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
+}
+
+.content-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 2em;
+}
+
+.banner-image{
+    width: 100%;
+    height: auto;
+    
+    border-radius: 0.35em;
+    
+    display: flex;
+    
+    margin: 0 auto;
+}
+
+.details{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.post-date{
+    font-family: var(--ff-roboto);
+    font-size: clamp(0.75rem, 0.6500rem + 0.5000vw, 1.25rem);
+    font-weight: 300;
+    text-align: center;
+    color: var(--gray-500);
+}
+
+.post-title{
+    font-family: var(--ff-raleway);
+    font-size: clamp(1rem, 0.8000rem + 1.0000vw, 2rem);
+    font-weight: 400;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.theme-divider{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid hsla(0, 0%, 0%, 0.1);
+}
+
+.main-paragraph{
+    font-family: var(--ff-ibm-plex-sans);
+    font-size: var(--fs-paragraph);
+    font-weight: 200;
 }

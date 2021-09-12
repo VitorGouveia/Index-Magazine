@@ -49,58 +49,6 @@ html{
   scroll-padding: 5em;
 }
 
-body{
-  min-height: 100vh;
-  
-  display: grid;
-  grid-template-rows: 20vh auto auto auto auto 2em 15vh;
-  grid-template-columns: 0.8fr 4fr 4fr 0.8fr;
-  grid-template-areas: 
-  "header header header header"
-  ". main main ."
-  ". section-parallel aside-section ."
-  " . gallery-title gallery-title ."
-  ". gallery gallery ."
-  ". back-top-wrapper . ."
-  "footer footer footer footer";
-}
-
-header{
-  grid-area: header;
-}
-
-main{
-  grid-area: main;  
-}
-
-.ctg-wrapper{
-  grid-area: ctg-wrapper;
-}
-
-.section-parallel{
-  grid-area: section-parallel;
-}
-
-aside{
-  grid-area: aside-section;
-}
-
-.gallery-title-wrapper{
-  grid-area: gallery-title;
-}
-
-.gallery-section{
-  grid-area: gallery;
-}
-
-.back-top-wrapper{
-  grid-area: back-top-wrapper;
-}
-
-footer{
-  grid-area: footer;
-}
-
 button, 
 input,
 hr{

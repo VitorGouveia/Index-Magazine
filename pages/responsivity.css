@@ -68,11 +68,11 @@
     Parallel 
     ###### */
     section.section-parallel a.content-link .content-category{
-        margin: 0.3em 0.7em;
+        margin: 0 1.3em;
     }
     
     section.section-parallel a.content-link .section-paragraph{
-        margin: 0.3em 0.5em;
+        margin: 0.3em 0.9em;
     }
     /* 
     ###### 
@@ -84,11 +84,11 @@
     Gallery 
     ###### */
     section.gallery-section a.content-link:nth-child(1) .content-category{
-        margin: 0.3em 1em;
+        margin: 0 1.3em;
     }
     
     section.gallery-section a.content-link:nth-child(1) .section-paragraph{
-        margin: 0.3em 0.7em;
+        margin: 0.3em 0.9em;
     }
     /* 
     ###### 

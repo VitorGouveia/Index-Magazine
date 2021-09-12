@@ -10,3 +10,16 @@
         background-position: 0% 50%;
     }
 }
+
+@keyframes fadein{
+    from {
+        opacity: 0.8;
+        transform: translateY(-10px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

@@ -12,6 +12,7 @@ const urlPostName = location.search.split("?=")[1]
 posts.map(({ title, name, img  }) => {
   if(urlPostName === name) {
     postTitle.innerHTML = title
+    document.title = title
 
     const { author, url, description } = img
 

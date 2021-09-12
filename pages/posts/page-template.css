@@ -92,5 +92,5 @@ body{
 .main-paragraph{
     font-family: var(--ff-ibm-plex-sans);
     font-size: var(--fs-paragraph);
-    font-weight: 200;
+    font-weight: 300;
 }

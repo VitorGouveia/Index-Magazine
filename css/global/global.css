@@ -28,7 +28,7 @@
   --fs-paragraph: clamp(0.95rem, 0.8808rem + 0.3077vw, 1.25rem);
   --fs-heading-primary: clamp(2.5rem, 1.8000rem + 3.5000vw, 6rem);
   --fs-heading-secondary: clamp(1rem, 0.4400rem + 1.3000vw, 2rem);
-
+  
   /* Colors */
   --light-100: hsl(0, 0%, 100%);
   --dark-900: hsl(0, 0%, 0%);
@@ -41,16 +41,27 @@
   --clr-quartenary: hsl(15, 100%, 50%);
   
   --gradient-primary: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
-
+  
   --gutter: .5rem;
 }
 
 /* Global Parameters */
 html{
+  
   font-size: 1rem;
   
   scroll-behavior: smooth;
   scroll-padding: 5em;
+}
+
+::-moz-selection {    
+  color: var(--light-100);   
+  background: var(--accent); 
+}  
+
+::selection {   
+  color: var(--light-100);   
+  background: var(--accent); 
 }
 
 button, 

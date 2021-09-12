@@ -65,7 +65,16 @@
     section.section-parallel a.content-link .section-paragraph{
         margin: 0.3em 0.5em;
     }
+
+    section .gallery-section a.content-link .content-category{
+        margin: 0.5em 0.7em;
+    }
+    
+    section .gallery-section a.content-link .section-paragraph{
+        margin: 0.3em 0.5em;
+    }
 }
+
 
 @media (max-width: 1920px){
     .section-parallel a.content-link .content-category{
@@ -73,6 +82,14 @@
     }
     
     .section-parallel a.content-link .section-paragraph{
-        margin: 0.4em 1em;
+        margin: 0.5em 1em;
+    }
+
+    .gallery-section a.content-link:nth-child(1) .content-category{
+        margin: -0.3em 1.40em;
+    }
+    
+    .gallery-section a.content-link:nth-child(1) .section-paragraph{
+        margin: 0.5em 1em;
     }
 }

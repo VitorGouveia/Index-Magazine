@@ -1,22 +1,8 @@
 {
-  "dependencies": {
-    "autoprefixer": "^10.3.4",
-    "commitizen": "^4.2.4",
-    "postcss-nested": "^5.0.6"
-  },
-  "scripts": {
-    "commit": "cz",
-    "build": "postcss css/global.css -o css/postcss-out.css"
-
-  },
-  "devDependencies": {
-    "cz-conventional-changelog": "3.3.0",
-    "postcss": "^8.3.6",
-    "postcss-cli": "^8.3.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+  "name": "magazine",
+  "private": true,
+  "workspaces": [
+    "./apps/*",
+    "./packages/*"
+  ]
 }

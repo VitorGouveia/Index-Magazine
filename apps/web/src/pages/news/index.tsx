@@ -78,12 +78,12 @@ const News: NextPage<NewsProps> = ({ posts }) => {
 
             <span>
               {metadata.tags.slice(0, 3).map((category, index) => (
-                <>
-                  <Link key={category} href={`/news/${category}`}>
+                <React.Fragment key={category}>
+                  <Link href={`/news/${category}`}>
                     <a>{category}</a>
                   </Link>
                   {index + 1 === metadata.tags.slice(0, 3).length ? "" : ", "}
-                </>
+                </React.Fragment>
               ))}
             </span>
 

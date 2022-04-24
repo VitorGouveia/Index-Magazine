@@ -90,70 +90,117 @@
   display: flex;
   flex-direction: column;
 
+  .postImage {
+    width: 100%;
+    background: gray;
+    filter: brightness(0.8);
+  }
+
+  span {
+    color: hsl(240, 10%, 30%);
+    position: relative;
+    padding-bottom: 6px;
+  
+    a {
+      transition: all 50ms;
+  
+      &:hover,
+      &:focus {
+        color: hsl(240, 7%, 70%);
+        text-decoration: underline;
+      }
+    }
+  
+    &::before {
+      content: "";
+  
+      position: absolute;
+      bottom: 2px;
+  
+      z-index: -1;
+  
+      background: hsl(58 60% 35%);
+  
+      width: 50px;
+      height: 3px;
+    }
+  }
+  
+  hr {
+    border: none;
+  
+    background: hsl(58 60% 35%);
+    height: 3px;
+  }
+  
+  p {
+    color: hsl(240, 10%, 60%);
+  }
+
+  .relatedPostLink {
+    color: hsl(240, 10%, 60%);
+  
+    &:hover,
+    &:focus {
+      color: hsl(240, 10%, 90%);
+    }
+  }
+
   &[data-variant="small"] {
     width: 240px;
     gap: 12px;
 
     .postImage {
-      width: 100%;
       height: 175px;
-      
-      background: gray;
-      filter: brightness(0.8);
-    }
-
-    span {
-      color: hsl(240, 10%, 30%);
-      position: relative;
-      padding-bottom: 6px;
-
-      a {
-        transition: all 50ms;
-
-        &:hover, &:focus {
-          color:hsl(240, 7%, 70%);
-          text-decoration: underline;
-        } 
-      }
-      
-      &::before {
-        content: "";
-
-        position: absolute;
-        bottom: 2px;
-
-        z-index: -1;
-
-        background: hsl(58 60% 35%);
-
-        width: 50px;
-        height: 3px;
-      }
-    }
-
-    hr {
-      border: none;
-
-      background: hsl(58 60% 35%);
-      height: 3px;
-    }
-
-    p {
-      color: hsl(240, 10%, 60%);
     }
     
-    .relatedPostLink {
-      color: hsl(240, 10%, 60%);
-      
-      &:hover, &:focus {
-        color: hsl(240, 10%, 90%);
-      }
-    }
+  }
 
-    &:hover {
-      .postImage {
-        filter: brightness(1.2);
-      }
+  &[data-variant="large"] {
+    width: 650px;
+    gap: 12px;
+
+    .postImage {
+      height: 240px;
     }
+  }
+
+  &[data-variant="bleed"] {
+    width: 100%;
+    gap: 12px;
+
+    .postImage {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  &:hover {
+    .postImage {
+      filter: brightness(1.2);
+    }
+  }
+}
+
+.evenly {
+  width: 100%;
+  max-width: 1316px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  h1 {
+    font-weight: lighter;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 12px;
   }
 }

@@ -104,6 +104,77 @@ const News: NextPage<NewsProps> = ({ posts }) => {
           </div>
         ))}
       </main>
+
+      <section className={styles.evenly}>
+        <div style={{ width: "100%" }}>
+          <h1>GEOPOLÍTICA</h1>
+
+          <div data-variant="large" className={styles.post}>
+            <Link href={`/news`}>
+              <a>
+                <div className={styles.postImage}></div>
+              </a>
+            </Link>
+
+            <span>
+              <Link href={`/news`}>
+                <a>bruh</a>
+              </Link>
+            </span>
+
+            <Link href={`/news`}>
+              <a>
+                <h4>bruh title</h4>
+                <p>my huge post description</p>
+              </a>
+            </Link>
+          </div>
+        </div>
+
+        <div style={{ width: "100%" }}>
+          <h1>TECNOLOGIA</h1>
+
+          <section className={styles.postsRow} style={{ padding: 0 }}>
+            <div data-variant="small" className={styles.post}>
+              <Link href={`/news`}>
+                <a>
+                  <div className={styles.postImage}></div>
+                </a>
+              </Link>
+              <span>
+                <Link href={`/news`}>
+                  <a>bruh</a>
+                </Link>
+              </span>
+              <Link href={`/news`}>
+                <a>
+                  <h4>bruh title</h4>
+                  <p>my huge post description</p>
+                </a>
+              </Link>
+            </div>
+
+            <div data-variant="small" className={styles.post}>
+              <Link href={`/news`}>
+                <a>
+                  <div className={styles.postImage}></div>
+                </a>
+              </Link>
+              <span>
+                <Link href={`/news`}>
+                  <a>bruh</a>
+                </Link>
+              </span>
+              <Link href={`/news`}>
+                <a>
+                  <h4>bruh title</h4>
+                  <p>my huge post description</p>
+                </a>
+              </Link>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
   );
 };

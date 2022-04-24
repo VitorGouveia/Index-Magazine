@@ -55,7 +55,7 @@ jobs:
         run: yarn workspaces focus --production --all
 
       - name: Build @magazine/web
-        run: yarn workspace @magazine/web build
+        run: yarn workspace @magazine/web gh-build
 
       - name: Export @magazine/web
         run: yarn workspace @magazine/web export

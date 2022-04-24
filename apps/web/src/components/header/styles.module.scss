@@ -1,0 +1,31 @@
+.headerContainer {
+  background: hsl(240, 10%, 18%);
+  border-bottom: 2px solid hsl(240, 10%, 36%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  padding: 12px 70px;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    a {
+      border-radius: 4px;
+      padding: 4px 8px;
+      background: transparent;
+
+      transition: all 200ms;
+
+      &:hover, &:focus {
+        color: hsl(240, 10%, 90%);
+        background: rgba(0, 0, 0, 0.28);
+      }
+    }
+  }
+}

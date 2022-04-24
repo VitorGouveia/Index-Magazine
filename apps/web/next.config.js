@@ -9,24 +9,25 @@ const nextConfig = {
   compress: true,
   cleanDistDir: true,
   optimizeFonts: true,
+  pageExtensions: ["tsx", "mdx"],
 
   distDir: "dist",
 
   basePath: isGithubPages ? `/${projectName}` : "",
   assetPrefix: isGithubPages ? `/${projectName}/` : "",
 
-  webpack: (config, { dev, isServer }) => {
-    // Replace React with Preact only in client production build
-    if (!dev && !isServer) {
-      Object.assign(config.resolve.alias, {
-        react: "preact/compat",
-        "react-dom/test-utils": "preact/test-utils",
-        "react-dom": "preact/compat",
-      });
-    }
+  // webpack: (config, { dev, isServer }) => {
+  //   // Replace React with Preact only in client production build
+  //   if (!dev && !isServer) {
+  //     Object.assign(config.resolve.alias, {
+  //       react: "preact/compat",
+  //       "react-dom/test-utils": "preact/test-utils",
+  //       "react-dom": "preact/compat",
+  //     });
+  //   }
 
-    return config;
-  },
+  //   return config;
+  // },
 };
 
 module.exports = nextConfig;

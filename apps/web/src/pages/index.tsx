@@ -1,11 +1,24 @@
-import type { NextPage } from 'next'
+import { NextPage } from "next";
+import Link from "next/link";
 
-const Home: NextPage = () => {
+import styles from "./index/styles.module.scss";
+
+const Homepage: NextPage = () => {
   return (
-    <div>
-      <p>hello world</p>
+    <div className={styles.container}>
+      <div>welcome to index news</div>
+      <div>
+        <Link href="/news">
+          <a>go to news portal</a>
+        </Link>
+      </div>
+      <div>
+        <Link href="/blog">
+          <a>go to blog portal</a>
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Homepage;

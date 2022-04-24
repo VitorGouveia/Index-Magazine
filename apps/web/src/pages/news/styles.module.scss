@@ -1,0 +1,159 @@
+.headingContainer {
+  background: #121216;
+
+  width: 100%;
+
+  display: grid;
+  justify-content: center;
+  justify-items: start;
+  grid-template-columns: repeat(
+    4,
+    min(
+      25%,
+      calc(
+        (1316px / 4)
+      )
+    )
+  );
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "heading  heading img img"
+    "desc     desc    img img"
+  ;
+  row-gap: 8px;
+  column-gap: 20px;
+  padding: 120px 70px;
+
+  img {
+    grid-area: img;
+    background: gray;
+
+    width: 525px;
+    height: 292px;
+  }
+
+  h1 {
+    font-size: 96px;
+    grid-area: heading;
+    color: hsl(240, 10%, 94%);
+  }
+
+  p {
+    font-size: 36px;
+    grid-area: desc;
+
+    padding-right: 10%;
+
+    color: hsl(240, 10%, 70%);
+  }
+
+  ul {
+    margin-top: 4rem;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    grid-area: tabs;
+
+    a {
+      font-size: 24px;
+
+      padding: 8px;
+
+      color: hsl(240, 10%, 70%);
+      // color: hsl(240, 10%, 18%);
+      text-transform: capitalize;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.postsRow {
+  // max-width: calc((590 * 2 + 590) * 1px);
+  max-width: calc(1316px + 140px);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  gap: 120px 20px;
+
+  padding: 120px 70px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+
+  &[data-variant="small"] {
+    width: 240px;
+    gap: 12px;
+
+    .postImage {
+      width: 100%;
+      height: 175px;
+      
+      background: gray;
+      filter: brightness(0.8);
+    }
+
+    span {
+      color: hsl(240, 10%, 30%);
+      position: relative;
+      padding-bottom: 6px;
+
+      a {
+        transition: all 50ms;
+
+        &:hover, &:focus {
+          color:hsl(240, 7%, 70%);
+          text-decoration: underline;
+        } 
+      }
+      
+      &::before {
+        content: "";
+
+        position: absolute;
+        bottom: 2px;
+
+        z-index: -1;
+
+        background: hsl(58 60% 35%);
+
+        width: 50px;
+        height: 3px;
+      }
+    }
+
+    hr {
+      border: none;
+
+      background: hsl(58 60% 35%);
+      height: 3px;
+    }
+
+    p {
+      color: hsl(240, 10%, 60%);
+    }
+    
+    .relatedPostLink {
+      color: hsl(240, 10%, 60%);
+      
+      &:hover, &:focus {
+        color: hsl(240, 10%, 90%);
+      }
+    }
+
+    &:hover {
+      .postImage {
+        filter: brightness(1.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.logoContainer {
+  padding: 4px;
+
+  .heading {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+
+    color: var(--heading-color);
+
+    position: relative;
+  
+    text-transform: uppercase;
+
+    width: max-content;
+    overflow: hidden;
+
+    a {
+      padding: 0;
+      transition: color 200ms;
+
+      
+      &:hover, &:focus {
+        color: hsl(240, 10%, 94%);
+        background: transparent;
+      }
+    }
+
+    &::before, &::after {
+      content: "";
+
+      position: absolute;
+
+      --size: 40px;
+
+      width: var(--size);
+      height: var(--size);
+
+      background: var(--mask-background-color);
+
+      transition: all 300ms;
+    }
+
+    &::before {
+      transform: rotate(-30deg) translate(-30px, -10px);
+    }
+
+    &::after {
+      transform: rotate(-30deg) translate(0px, -20px);
+    }
+
+    transition: all 200ms;
+
+    &:hover {
+      transform: scale(1.05);
+
+      &::before {
+        transform: rotate(-30deg) translate(-50px, -10px);
+      }
+
+      &::after {
+        transform: rotate(-30deg) translate(20px, -20px);
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[730],{9730:function(e,n,r){"use strict";r.r(n);var a=r(2322),s=r(2784),t=r(7823),c=r.n(t),h=function(e){var n=e.children;return(0,a.jsx)("header",{className:c().headerContainer,children:(0,a.jsx)("ul",{children:n})})};n.default=(0,s.memo)(h)},7823:function(e){e.exports={headerContainer:"styles_headerContainer__499M0"}}}]);

@@ -1,6 +1,6 @@
 // @ts-check
 const isGithubPages = process.env.GH_PAGES === "true";
-const projectName = "index-magazine";
+const projectName = "Index-Magazine";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
